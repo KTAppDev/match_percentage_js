@@ -6,7 +6,7 @@ function removeSimpleWords(sentence, simpleWords) {
   return words;
 }
 
-function matchPercentage(sentence1, sentence2) {
+function matchPercentage(sentence1, sentence2, matchLevel = 60) {
   try {
     let mainString;
     let otherString;
@@ -35,7 +35,7 @@ function matchPercentage(sentence1, sentence2) {
 
     const result = {
       matchPercentage: Math.round(matchPercentage),
-      match: matchPercentage >= 60 ? 'This is probably a match' : 'This is probably NOT a match',
+      match: matchPercentage >= matchLevel ? true : false,
     };
     return result;
   }
