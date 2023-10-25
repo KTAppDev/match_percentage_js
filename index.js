@@ -6,7 +6,7 @@ function removeSimpleWords(sentence, simpleWords) {
   return words;
 }
 
-async function checkMatchPercentage(sentence1, sentence2) {
+async function matchPercentage(sentence1, sentence2) {
   try {
     let mainString;
     let otherString;
@@ -48,6 +48,4 @@ async function checkMatchPercentage(sentence1, sentence2) {
   }
 }
 
-module.exports = {
-  checkMatchPercentage,
-};
+export default matchPercentage;
