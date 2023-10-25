@@ -35,7 +35,7 @@ async function matchPercentage(sentence1, sentence2) {
 
     const result = {
       matchPercentage: Math.round(matchPercentage),
-      match: matchPercentage >= 40 ? 'This is probably a match' : 'This is probably NOT a match',
+      match: matchPercentage >= 60 ? 'This is probably a match' : 'This is probably NOT a match',
     };
     return result;
   }
