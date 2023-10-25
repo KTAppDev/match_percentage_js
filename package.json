@@ -1,6 +1,6 @@
 {
   "name": "match_percentage",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "I originally wrote this to compare title headlines from local news websites I web scrape. On any given day, all the websites can have the same story with the title being very similar, which helps me check for duplicate articles.",
   "main": "index.js",
   "scripts": {},

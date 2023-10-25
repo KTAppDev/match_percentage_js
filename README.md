@@ -61,31 +61,32 @@ Output:
 }
 ```
 
-## Simple Words
+## MatchLevel (default 60)
 
-The module includes a list of simple words that are removed from the sentences before calculating the match percentage. This list can be customized by passing an array of words to the `removeSimpleWords()` function.
+The default match level is 60, but you can adjust it as needed.
+const matchLevel = 75; // Adjust the match level to your preference.
+
+const result = matchPercentage(sentence1, sentence2, matchLevel);
+console.log(result);
+
+
+### Simple Words (coming soon)
+
+The module includes a list of simple words that are removed from the sentences before calculating the match percentage.
 
 Here is an example of how to customize the list of simple words:
 
 javascript
 const matchPercentage = require('match-percentage');
 
-const simpleWords = ['of', 'at', 'i', 'by', 'in', 'is', 'to', 'as', 'for', 'of', 'a', 'the', 'this', 'I', 'he', 'you', 'and', 'but', 'or', 'if'];
-
 const customSimpleWords = ['very', 'simple'];
 
-const result = await matchPercentage.checkMatchPercentage(sentence1, sentence2, customSimpleWords);
+const matchLevel = 75;
+
+const result = await matchPercentage(sentence1, sentence2, customSimpleWords, matchLevel);
 
 console.log(result);
-```
 
-Output:
-
-{
-  matchPercentage: 80,
-  match: 'This is probably a match'
-}
-```
 
 
 ## Conclusion
