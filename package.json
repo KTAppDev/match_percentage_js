@@ -1,0 +1,30 @@
+{
+  "name": "match_percentage",
+  "version": "1.0.0",
+  "description": "I originally wrote this to compare title headlines from local news websites I web scrape. On any given day, all the websites can have the same story with the title being very similar, which helps me check for duplicate articles.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KTAppDev/match_percentage_js.git"
+  },
+  "keywords": [
+    "match",
+    "percentage",
+    "match",
+    "sentences",
+    "similar",
+    "similar",
+    "sentences",
+    "compare",
+    "sentences",
+    "similar lines"
+  ],
+  "author": "Ken Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KTAppDev/match_percentage_js/issues"
+  },
+  "homepage": "https://github.com/KTAppDev/match_percentage_js#readme",
+  "dependencies": {}
+}
