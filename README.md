@@ -41,7 +41,7 @@ or
 import matchPercentage from "match_percentage";
 
 
-const sentence1 = 'I am 99% sure that was a unicorn';
+const sentence1 = 'I am 83% sure that was a unicorn';
 
 const sentence2 = 'I had 83% for maths and 68% for French';
 
@@ -50,25 +50,42 @@ const result = matchPercentage(sentence1, sentence2);
 console.log(result);
 ```
 
-
 Output:
 
 ```
 {
+  matchPercentage: 22,
+  match: false
+}
+```
+<br>
+
+```
+const sentence1 = 'This is a simple sentence.';
+
+const sentence2 = 'This is a very similar sentence.';
+
+output:
+
+{
   matchPercentage: 68,
   match: true
 }
+
 ```
+
 IMO these are similar enough to be talking about the same thing. You can set the truth level!
 
-## TruthLevel (default 60)
+## truthLevel (default 60)
 
 The default match level is 60, but you can adjust it as needed.
+
+```
 const matchLevel = 75; // Adjust the match level to your preference.
 
 const result = matchPercentage(sentence1, sentence2, truthLevel);
 console.log(result);
-
+```
 
 ### Simple Words (coming soon)
 
