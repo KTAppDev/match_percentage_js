@@ -14,13 +14,13 @@ Open issues on github - contributions welcomed
 To use the module, simply install it using npm or yarn:
 
 ```
-npm install match-percentage
+npm install match_percentage
 ```
 
 or
 
 ```
-yarn add match-percentage
+yarn add match_percentage
 ```
 
 Once the module is installed, you can import it into your code and use the `checkMatchPercentage(s1,s2)` function to calculate the match percentage between two sentences. The function takes two arguments: the two sentences to compare. It returns an object with two properties:
@@ -32,20 +32,20 @@ Here is an example of how to use the module:
 
 
 ```
-const matchPercentage = require('match-percentage');
+const matchPercentage = require('match_percentage');
 ```
 
 or
 
 ```
-import matchPercentage from match-percentage;
+import matchPercentage from "match_percentage";
 
 
 const sentence1 = 'This is a simple sentence.';
 
 const sentence2 = 'This is a very similar sentence.';
 
-const result = await matchPercentage(sentence1, sentence2);
+const result = matchPercentage(sentence1, sentence2);
 
 console.log(result);
 ```

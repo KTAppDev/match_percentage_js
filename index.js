@@ -6,7 +6,7 @@ function removeSimpleWords(sentence, simpleWords) {
   return words;
 }
 
-async function matchPercentage(sentence1, sentence2) {
+function matchPercentage(sentence1, sentence2) {
   try {
     let mainString;
     let otherString;
